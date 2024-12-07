@@ -155,7 +155,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Create the title and duration
         const title = document.createElement("h2");
         title.textContent = song.title;
-        title.classList.add("w-60", "overflow-hidden");
+        title.classList.add("w-full", "overflow-hidden");
         const duration = document.createElement("span");
      
      
