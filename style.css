@@ -1,0 +1,41 @@
+.logo{
+    font-size: 40px;
+    align-items: center;
+}
+.logo span{
+    font-size: 20px;
+    margin-left: 10px;
+}
+button i{
+    font-size: 30px;
+}
+.play{
+    position: absolute;
+    left: 30px;
+}
+audio::-webkit-media-controls-panel {
+    background: transparent;
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-volume-slider,
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display,
+audio::-webkit-media-controls-fullscreen-button {
+    display: none !important; /* Properly hides the unwanted controls */
+}
+
+/* Keep only the timeline (seek bar) visible */
+audio::-webkit-media-controls-timeline {
+    display: block !important;
+    width: 100%;
+}
+
+/* Optional: Style the audio element to make it minimal */
+audio {
+    width: 100%;
+    height: 20px; /* Only show the seek bar */
+    outline: none;
+    border: none;
+}
